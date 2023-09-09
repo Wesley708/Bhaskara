@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de baskara</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />7
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Calculadora de Bhaskara</h1>
+
+    <div class="row">
+        <div class="container">
+            <form action="POST">
+                <div>
+                    <label for="a"><h3>A</h3></label>
+                    <input type="number" name="a" id="a">
+                </div>
+                <div>
+                    <label for="b"><h3>B</h3></label>
+                    <input type="number" name="b" id="b">
+                </div>
+                <div>
+                    <label for="c"><h3>C</h3></label>
+                    <input type="number" name="c" id="c">
+                </div>
+                
+                <button onclick="delta()">Calcular</button>
+            </form>
+        </div>
+        <div class="container">
+            <div>
+                <h3>Delta = </h3>
+                <h3 id="delta"></h3>
+            </div>
+            <div>
+                <h3>X1 = </h3>
+                <h3 id="x1"> </h3>
+            </div>
+            <div>
+                <h3>X2 = </h3>
+                <h3 id="x2"> </h3>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="index.js">
+
+</script>
+</html>
