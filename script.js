@@ -21,7 +21,11 @@ function delta(a, b, c){
 function bask(a, b, del){
     
     if(del < 0){
-        document.getElementById("delta").innerHTML = `${del} Delta é um número negativo!`;    
+        document.getElementById("delta").innerHTML = `${del} Delta é um número negativo!`;
+        x1 = (-b + Math.sqrt(del)) / (2 * a);
+        document.getElementById("x1").innerHTML = ``;
+        x2 = (-b - Math.sqrt(del)) / (2 * a);
+        document.getElementById("x2").innerHTML = ``;    
     }else{
         document.getElementById("delta").innerHTML = `${del}`; 
         x1 = (-b + Math.sqrt(del)) / (2 * a);
