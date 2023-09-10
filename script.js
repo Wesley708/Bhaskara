@@ -14,14 +14,14 @@ function enviar(){
 };
 
 function delta(a, b, c){
-    del = b * b - 4 * a * c;
-    bask(a, b, c, del);
+    del = Number(b * b - 4 * a * c);
+    bask(a, b, del);
 };
 
 function bask(a, b, del){
     
-    if(Number(del) < 0){
-        document.getElementById("delta").innerHTML = `${del} Delta é um número negativo, e por tanto não tem raiz real!`;    
+    if(del < 0){
+        document.getElementById("delta").innerHTML = `${del} Delta é um número negativo!`;    
     }else{
         document.getElementById("delta").innerHTML = `${del}`; 
         x1 = (-b + Math.sqrt(del)) / (2 * a);
